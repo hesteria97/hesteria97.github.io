@@ -554,10 +554,7 @@ img { max-width: 100%; }
 .cert-icon.ml   { background: rgba(16,185,129,0.12); color: var(--success); }
 .cert-icon.google { background: rgba(66,133,244,0.12); color: #4285f4; }
 .cert-icon.talend { background: rgba(99,102,241,0.12); color: var(--accent); }
-.cert-icon.ai     { background: rgba(168,85,247,0.12); color: #a855f7; }
-.cert-icon.ibm    { background: rgba(30,64,175,0.12);  color: #1e40af; }
-.cert-icon.sql    { background: rgba(6,182,212,0.12);  color: #06b6d4; }
-.cert-icon.hadoop { background: rgba(234,88,12,0.12);  color: #ea580c; }
+.cert-icon.ai   { background: rgba(168,85,247,0.12); color: #a855f7; }
 
 .cert-body h3 { font-size: 0.88rem; font-weight: 700; margin-bottom: 2px; }
 .cert-body p  { font-size: 0.77rem; color: var(--text-muted); }

@@ -433,6 +433,10 @@ img { max-width: 100%; }
   gap: 24px;
 }
 
+.project-card.featured {
+  grid-column: span 2;
+}
+
 .project-card {
   background: var(--bg-card); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 28px;
@@ -443,7 +447,6 @@ img { max-width: 100%; }
   box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
 }
-.project-card.featured { grid-column: span 1; }
 
 .project-header { display: flex; justify-content: space-between; align-items: center; }
 .project-icon {
@@ -470,6 +473,21 @@ img { max-width: 100%; }
 .project-achievements li::before {
   content: ''; position: absolute; left: 0; top: 9px;
   width: 5px; height: 5px; border-radius: 50%; background: var(--success);
+}
+
+.project-badges-row { display: flex; gap: 6px; align-items: center; }
+
+.project-badge-pro {
+  font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;
+  color: #f59e0b; background: rgba(245,158,11,0.1);
+  padding: 3px 10px; border-radius: 100px; border: 1px solid rgba(245,158,11,0.3);
+}
+
+.project-version {
+  font-size: 0.7rem; font-weight: 600; color: var(--accent);
+  background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.2);
+  padding: 2px 8px; border-radius: 100px; vertical-align: middle;
+  font-family: var(--mono); margin-left: 6px;
 }
 
 .project-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
@@ -642,6 +660,7 @@ img { max-width: 100%; }
   .hero-stats { gap: 16px; }
   .stat-num { font-size: 1.6rem; }
   .projects-grid { grid-template-columns: 1fr; }
+  .project-card.featured { grid-column: span 1; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
   .certs-grid { grid-template-columns: 1fr; }
   .awards-row { grid-template-columns: 1fr; }

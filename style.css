@@ -607,7 +607,7 @@ img { max-width: 100%; }
   padding: 2px 9px; border-radius: 100px; white-space: nowrap;
 }
 
-.awards-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.awards-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .award-banner {
   background: var(--bg-card); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 24px;
